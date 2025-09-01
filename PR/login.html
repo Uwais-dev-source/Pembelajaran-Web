@@ -6,19 +6,37 @@
     <title>login</title>
   </head>
   <body>
-    <form action="">
-    <fieldset>
-    <legend>Login</legend>  
-    <label for="log">Email / No. Whatsapp</label>
-        <br />
-        <input type="text" name="log" placeholder="Tulis disini" required />
-        <br />
-        <br>
-        <label for="pass">Password</label>
-        <br />
-        <input type="text" name="pass" placeholder="Masukan Password" required />
-        <br>
-        <br>
-        <button>Confirm</button>
+    <main>
+      <section class="login">
+        <form>
+          <fieldset class="field">
+            <legend><h3>Login</h3></legend>
+            <label for="user">Username</label>
+            <br />
+            <input
+              type="text"
+              name="user"
+              id="user"
+              class="form-control"
+              placeholder="Username"
+              required
+            />
+            <br />
+            <label for="pass">Password</label>
+            <br />
+            <input
+              type="password"
+              name="pass"
+              id="pass"
+              class="form-control"
+              placeholder="Password"
+            />
+            <br />
+            <br />
+            <button class="btn btn-primary float-end">Kirirm</button>
+          </fieldset>
+        </form>
+      </section>
+    </main>
   </body>
 </html>

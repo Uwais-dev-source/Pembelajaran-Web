@@ -1,0 +1,16 @@
+header {
+  background-color: #ffffff;
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 20px;
+  padding-top: 30px;
+}
+
+header .left .logo {
+  color: #0078aa;
+}
+
+header .user {
+  font-weight: bold;
+}

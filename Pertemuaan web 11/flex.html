@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <style>
+      .container {
+        width: 100%;
+        display: flex;
+        background-color: #920a92;
+        justify-content: center;
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+      }
+
+      .container div {
+        display: flex;
+        width: 150px;
+        height: 100px;
+        margin: 10px;
+        background-color: orange;
+        align-items: center;
+        border-radius: 10px;
+      }
+
+      /* .container div:hover {I
+        background-color: yellow;
+      } */
+
+      /* .container div:active {
+        background-color: red;
+      } */
+
+      .container div:nth-child(9) {
+        background-color: greenyellow !important;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- FLEX ORDER -->
+      <!-- <div class="item1" style="order: 3">1</div>
+      <div class="item2" style="order: 1">2</div>
+      <div class="item3" style="order: 2">3</div> -->
+
+      <!-- FLEX GROW -->
+      <div class="item1">1</div>
+      <div class="item2">2</div>
+      <div class="item3">3</div>
+      <div class="item4">4</div>
+      <div class="item5">5</div>
+      <div class="item6">6</div>
+      <div class="item7">7</div>
+      <div class="item8">8</div>
+      <div class="item9">9</div>
+      <div class="item10">10</div>
+      <div class="item11">11</div>
+    </div>
+  </body>
+</html>

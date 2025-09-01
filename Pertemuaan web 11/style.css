@@ -1,0 +1,231 @@
+main {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+main article {
+  margin: 20px 10px;
+  padding: 20px;
+  flex-basis: 72%;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+main article p {
+  margin: 10px 0px;
+}
+
+main aside {
+  flex-basis: 23%;
+  flex-grow: 1;
+}
+
+main aside .tag,
+main aside .news {
+  margin: 20px 10px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  flex-basis: 20%;
+}
+
+main aside .tag ul,
+main aside .news ol {
+  margin: 5px 30px;
+}
+
+main aside h3 {
+  margin-top: 20px;
+}
+
+header {
+  background-color: #ffffff;
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 20px;
+  padding-top: 30px;
+}
+
+header .left .logo {
+  color: #0078aa;
+}
+
+header .user {
+  font-weight: bold;
+}
+
+nav {
+  background-color: #3a98b9;
+  text-align: right;
+  height: 50px;
+}
+
+nav ul {
+  vertical-align: middle;
+}
+
+nav li {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 5px;
+}
+
+nav ul li:hover {
+  background-color: #0078aa;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 10px;
+}
+
+.comments {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 50px;
+}
+
+.comments form fieldset {
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid #ccc;
+}
+
+.form-control {
+  width: 350px;
+  height: 35px;
+  margin-bottom: 10px;
+}
+
+.form-control:focus {
+  background-color: #eeeeee;
+  outline-color: #0078aa;
+}
+
+.form-desc {
+  width: 350px;
+}
+
+.form-desc:focus {
+  background-color: #eeeeee;
+  outline-color: #0078aa;
+}
+
+.btn {
+  height: 40px;
+  width: 100px;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+}
+
+.btn-primary {
+  background-color: #0078aa;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #64c9f5;
+}
+
+.float-end {
+  float: right;
+}
+
+footer {
+  background-color: #ffffff;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+
+/* ukuran layar tablet */
+
+@media screen and (max-width: 768px) {
+  main article {
+    flex-basis: 100%;
+  }
+}
+
+img {
+  max-width: 90%;
+  height: auto;
+}
+
+main asisde {
+  flex-basis: 100%;
+}
+
+main aside .tag main aside .news {
+  flex-basis: 45%;
+}
+
+.form-control {
+  width: 100%;
+}
+
+.form-desc {
+  width: 100%;
+}
+
+/*ukuran hp gede*/
+
+@media screen and (max-width: 425px) {
+  main article {
+    flex-basis: 100%;
+  }
+}
+
+img {
+  max-width: 90%;
+  height: auto;
+}
+
+header .left .logo {
+  font-size: 20px;
+}
+
+header .right .user {
+  font-size: 14px;
+}
+
+nav {
+  height: auto;
+  text-align: center;
+}
+
+nav ul {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: block;
+  margin: 5px 0;
+}
+
+nav ul li:hover {
+  background-color: initial;
+}
+
+nav ul li a {
+  height: auto;
+  line-height: 30px;
+  padding: 0;
+}
+
+main article {
+  margin: 10px 0;
+  flex-basis: 100%;
+}
